@@ -11,4 +11,5 @@ def test_get_size():
 def test_get_filename():
     test = File(filename, content).get_filename()
     assert test == filename
+    assert test == filename
 
