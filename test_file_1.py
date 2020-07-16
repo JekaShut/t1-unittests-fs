@@ -1,15 +1,22 @@
 from file_1 import File
 
-content = "Hello world!"
-filename = "filename"
+contents = ["Hello world!", 0, "_3H"]
+filenames = ["filename", 0, "_3H"]
+
 
 
 def test_get_size():
-    test = File(filename, content).get_size()
-    assert test == len(content)
+    n = 0
+    for x in contents:
+        test = File(filenames[n], contents[n]).get_size()
+        assert test == len(contents[n])
+        n = n + 1
 
 def test_get_filename():
-    test = File(filename, content).get_filename()
-    assert test == filename
-    assert test == filename
+    n = 0
+    for x in filenames:
+        test = File(filenames[n], contents[n]).get_filename()
+        assert test == filenames[n]
+        
+    
 
