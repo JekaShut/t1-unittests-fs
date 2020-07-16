@@ -16,7 +16,7 @@ def test_get_filename():
     n = 0
     for x in filenames:
         test = File(filenames[n], contents[n]).get_filename()
-        assert test == filenames[n]
+        assert test == filenames[n] 
         
     
 
